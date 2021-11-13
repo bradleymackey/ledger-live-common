@@ -107,6 +107,20 @@ export const getNetworkParameters = (
       sigHash: BitcoinLikeSigHashType.SIGHASH_ALL,
       additionalBIPs: [],
     };
+  } else if (networkName === "garlicoin") {
+    return {
+      identifier: "grlc",
+      P2PKHVersion: Buffer.from([0x26]),
+      P2SHVersion: Buffer.from([0x32]),
+      xpubVersion: Buffer.from([0x04, 0x88, 0xb2, 0x1e]),
+      feePolicy: BitcoinLikeFeePolicy.PER_BYTE,
+      dustAmount: new BigNumber(10000),
+      messagePrefix: "Garlicoin Signed Message:\n",
+      usesTimestampedTransaction: false,
+      timestampDelay: new BigNumber(0),
+      sigHash: BitcoinLikeSigHashType.SIGHASH_ALL,
+      additionalBIPs: [],
+    };
   } else if (networkName === "peercoin") {
     return {
       identifier: "ppc",

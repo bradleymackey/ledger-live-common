@@ -98,6 +98,13 @@ export default function cryptoFactory(currency: Currency) {
       res = new crypto.Bitcoin({ network });
       break;
     }
+    case "garlicoin": {
+      // AWAITING 'coininfo' PR support for garlicoin (and a subsequent release to support it)
+      // https://github.com/cryptocoinjs/coininfo/pull/108
+      const network = coininfo.garlicoin.main.toBitcoinJS();
+      res = new crypto.Garlicoin({ network });
+      break;
+    }
     default: {
       throw new Error(`Currency ${currency} doesn't exist!`);
     }

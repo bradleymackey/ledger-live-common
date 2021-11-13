@@ -43,6 +43,7 @@ const experimentalIntegrations = [
   "decred",
   "bitcoin_testnet",
   "tezos",
+  "garlicoin",
 ];
 export function shouldUseJS(currency: CryptoCurrency) {
   const jsBridge = jsBridges[currency.family];

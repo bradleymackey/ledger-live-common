@@ -49,7 +49,7 @@ jobs:
           SLACK_CHANNEL: live-ft-taproot
           BOT_FILTER_FAMILY: bitcoin
           EXPERIMENTAL_EXPLORERS: true
-          EXPERIMENTAL_CURRENCIES_JS_BRIDGE: bitcoin,bitcoin_cash,bsc,litecoin,dash,qtum,zcash,bitcoin_gold,stratis,dogecoin,digibyte,komodo,pivx,zencash,vertcoin,peercoin,viacoin,stakenet,stealthcoin,decred,bitcoin_testnet,tezos
+          EXPERIMENTAL_CURRENCIES_JS_BRIDGE: bitcoin,bitcoin_cash,bsc,litecoin,dash,qtum,zcash,bitcoin_gold,stratis,dogecoin,digibyte,komodo,pivx,zencash,vertcoin,peercoin,viacoin,stakenet,stealthcoin,decred,bitcoin_testnet,tezos,garlicoin
         run: COINAPPS=$PWD/coin-apps yarn ci-test-bot
         timeout-minutes: 60
       - name: Run coverage

@@ -32,4 +32,5 @@ export type Currency =
   | "viacoin"
   | "stakenet"
   | "stealthcoin"
-  | "bitcoin_testnet";
+  | "bitcoin_testnet"
+  | "garlicoin";

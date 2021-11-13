@@ -47,6 +47,7 @@ setSupportedCurrencies([
   "algorand",
   "polkadot",
   "filecoin",
+  "garlicoin",
 ]);
 const defaultSyncConfig = {
   paginationConfig: {},
@@ -77,6 +78,7 @@ const excluded = [
   "vertcoin",
   "zcash",
   "zencash",
+  "garlicoin",
 ];
 
 type JsonTemplate = {

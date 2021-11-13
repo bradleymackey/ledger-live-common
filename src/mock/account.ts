@@ -174,6 +174,7 @@ const hardcodedMarketcap = [
   "algorand/asa/438828",
   "algorand/asa/312769",
   "algorand/asa/163650",
+  "garlicoin",
 ];
 // for the mock generation we need to adjust to the actual market price of things, we want to avoid having things < 0.01 EUR
 const tickerApproxMarketPrice = {

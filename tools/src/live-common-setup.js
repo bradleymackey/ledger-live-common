@@ -51,6 +51,7 @@ setSupportedCurrencies([
   "tron",
   "stellar",
   "filecoin",
+  "garlicoin",
 ]);
 
 const webusbDevices = {};

@@ -10,6 +10,7 @@ describe("derivation", () => {
       ["ethereum", null],
       ["cosmos", null],
       ["litecoin", ["native_segwit", "segwit", ""]],
+      ["garlicoin", ["native_segwit", "segwit", ""]],
       ["qtum", ["segwit", ""]],
     ];
     testData.forEach(([currencyId, derivationModes]) => {
@@ -24,6 +25,7 @@ describe("derivation", () => {
       ["ethereum", null],
       ["cosmos", null],
       ["litecoin", "native_segwit"],
+      ["garlicoin", "native_segwit"],
       ["qtum", "segwit"],
     ];
     testData.forEach(([currencyId, derivationMode]) => {

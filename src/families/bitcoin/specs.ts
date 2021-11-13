@@ -513,6 +513,23 @@ const litecoin: AppSpec<Transaction> = {
     ),
   }),
 };
+const garlicoin: AppSpec<Transaction> = {
+  name: "Garlicoin",
+  currency: getCryptoCurrencyById("garlicoin"),
+  dependency: "Bitcoin",
+  appQuery: {
+    model: DeviceModelId.nanoS,
+    appName: "Garlicoin",
+  },
+  test: genericTest,
+  mutations: bitcoinLikeMutations({
+    targetAccountSize: 5,
+    minimalAmount: parseCurrencyUnit(
+      getCryptoCurrencyById("garlicoin").units[0],
+      "0.001"
+    ),
+  }),
+};
 
 export default {
   bitcoin,
@@ -522,6 +539,7 @@ export default {
   dash,
   digibyte,
   dogecoin,
+  garlicoin,
   komodo,
   litecoin,
   peercoin,

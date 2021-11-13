@@ -173,6 +173,7 @@ describe("Unit tests for various utils functions", () => {
     validateAddrs(["ETx91CT52eBFYWbe4Yht5BpZNigWg2EkqJ"], "viacoin", true);
     validateAddrs(["7i1KkJHUjfw2MrbtXK5DQkhz7zd36st9GR"], "stakenet", true);
     validateAddrs(["S6NMcEfYbavHrP3Uo1wbEUvKhAbKeMuga8"], "stealthcoin", true);
+    validateAddrs(["MQaxzmF2XMYxg8UyL2RDiYiaBjFRgcaHjf"], "garlicoin", true);
 
     validateAddrs(
       ["bitcoincash:qzl0x0982hy9xrh99wdnejx4eecdn02jv58as5p599"],
@@ -206,5 +207,6 @@ describe("Unit tests for various utils functions", () => {
     validateAddrs(["ETx91CT52eBFYWbe4Yht5BpZNigWg2Ekqq"], "viacoin", false);
     validateAddrs(["7i1KkJHUjfw2MrbtXK5DQkhz7zd36st9GG"], "stakenet", false);
     validateAddrs(["S6NMcEfYbavHrP3Uo1wbEUvKhAbKeMugaa"], "stealthcoin", false);
+    validateAddrs(["MQaxzmF2XMYxg8UyL2RDiYiaBjFRgcaHjj"], "garlicoin", false);
   });
 });
